@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import Logo from './Logo'
+import Search from './Search'
 
 type Props = {}
 
