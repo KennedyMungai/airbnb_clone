@@ -1,10 +1,13 @@
 'use client'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Avatar from '../Avatar'
+import { useState } from 'react'
 
 type Props = {}
 
 const UserMenu = (props: Props) => {
+	const [isOpen, setIsOpen] = useState<boolean>(false)
+
 	return (
 		<div className='relative'>
 			<div className='flex flex-row items-center gap-3'>
