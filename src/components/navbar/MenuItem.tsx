@@ -1,5 +1,8 @@
 'use client'
-type Props = {}
+type Props = {
+	onClick: () => void
+	label: string
+}
 
 const MenuItem = (props: Props) => {
 	return <div>MenuItem</div>
