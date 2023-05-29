@@ -1,5 +1,4 @@
-import React from 'react'
-
+'use client'
 type Props = {}
 
 const UserMenu = (props: Props) => {
