@@ -60,7 +60,11 @@ const Modal = ({
         secondaryAction()
 	}, [disabled, secondaryAction])
 
-	return <div>Modal</div>
+    if (!isOpen) {
+		return null
+	} 
+    
+    return <div>Modal</div>
 }
 
 export default Modal
