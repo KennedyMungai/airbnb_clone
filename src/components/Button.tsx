@@ -1,7 +1,7 @@
 type Props = {}
 
 const Button = (props: Props) => {
-	return <div>Button</div>
+	return <button>Sample Button Title</button>
 }
 
 export default Button
