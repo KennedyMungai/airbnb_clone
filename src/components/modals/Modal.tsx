@@ -1,5 +1,5 @@
 'use client'
-import { ReactElement, useEffect, useState } from 'react'
+import { ReactElement, useCallback, useEffect, useState } from 'react'
 
 type Props = {
 	isOpen?: boolean
@@ -31,6 +31,18 @@ const Modal = ({
 	useEffect(() => {
 		setShowModal(isOpen)
 	}, [isOpen])
+
+    const handleClose = useCallback(() => {
+		if (disabled) {
+			return
+		}
+
+		setShowModal(false)
+
+		setTimeout(() => {
+			onClose()
+		}, 300)
+	}, [disabled, onClose])
 
 	return <div>Modal</div>
 }
