@@ -32,7 +32,7 @@ const Modal = ({
 		setShowModal(isOpen)
 	}, [isOpen])
 
-    const handleClose = useCallback(() => {
+	const handleClose = useCallback(() => {
 		if (disabled) {
 			return
 		}
@@ -44,13 +44,21 @@ const Modal = ({
 		}, 300)
 	}, [disabled, onClose])
 
-    const handleSubmit = useCallback(() => {
+	const handleSubmit = useCallback(() => {
 		if (disabled) {
 			return
 		}
 
 		onSubmit()
 	}, [disabled, onSubmit])
+
+	const handleSecondaryAction = useCallback(() => {
+		if (disabled || !secondaryAction) {
+			return
+		}
+
+        secondaryAction()
+	}, [disabled, secondaryAction])
 
 	return <div>Modal</div>
 }
