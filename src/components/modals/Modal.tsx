@@ -88,6 +88,8 @@ const Modal = ({
 									{title}
 								</div>
 							</div>
+							{/* Body */}
+							<div className='relative p-6 flex-auto'>{body}</div>
 						</div>
 					</div>
 				</div>
