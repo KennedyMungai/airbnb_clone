@@ -1,6 +1,7 @@
 'use client'
 import { ReactElement, useCallback, useEffect, useState } from 'react'
 import {IoMdClose} from 'react-icons/io'
+import Button from '../Button'
 
 type Props = {
 	isOpen?: boolean
