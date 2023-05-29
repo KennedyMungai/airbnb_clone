@@ -13,7 +13,18 @@ type Props = {
 	secondaryLabel?: string
 }
 
-const Modal = (props: Props) => {
+const Modal = ({
+	isOpen,
+	onClose,
+	onSubmit,
+	title,
+	body,
+	footer,
+	actionLabel,
+	disabled,
+	secondaryAction,
+	secondaryLabel
+}: Props) => {
 	return <div>Modal</div>
 }
 
