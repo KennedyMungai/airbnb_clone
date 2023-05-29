@@ -4,7 +4,7 @@ type Props = {
 	label: string
 }
 
-const MenuItem = (props: Props) => {
+const MenuItem = ({ onClick, label }: Props) => {
 	return <div>MenuItem</div>
 }
 
