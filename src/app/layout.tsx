@@ -1,6 +1,7 @@
 import NavBar from '@/components/navbar/NavBar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
+import Modal from '@/components/modals/Modal'
 
 export const metadata = {
 	title: 'AirBnB Clone',
