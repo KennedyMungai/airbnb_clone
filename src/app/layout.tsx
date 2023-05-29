@@ -20,7 +20,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={font.className}>
-				<Modal isOpen />
+				<Modal isOpen title='I Am A Good Modal' />
 				<NavBar />
 				{children}
 			</body>
