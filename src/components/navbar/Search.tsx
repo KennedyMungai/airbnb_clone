@@ -9,6 +9,9 @@ const Search = (props: Props) => {
 				<div className='hidden sm:block text-sm font-semibold px-6 flex-1 text-center border-x-[1px]'>
 					Any Week
 				</div>
+				<div className='text-sm pl-6 pr-2 text-gray-600 flex flex-row items-center gap-3'>
+					<div className='hidden sm:block'>Add Guests</div>
+				</div>
 			</div>
 		</div>
 	)
