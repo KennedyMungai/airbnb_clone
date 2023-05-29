@@ -1,5 +1,5 @@
 'use client'
-import { ReactElement, useState } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 
 type Props = {
 	isOpen?: boolean
@@ -26,7 +26,11 @@ const Modal = ({
 	secondaryAction,
 	secondaryLabel
 }: Props) => {
-	const [showModal, setShowModal] = useState(false)
+	const [showModal, setShowModal] = useState(isOpen)
+
+	useEffect(() => {
+		setShowModal(isOpen)
+	}, [isOpen])
 
 	return <div>Modal</div>
 }
