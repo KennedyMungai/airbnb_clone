@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, useState } from 'react'
 
 type Props = {
 	isOpen?: boolean
@@ -25,6 +25,8 @@ const Modal = ({
 	secondaryAction,
 	secondaryLabel
 }: Props) => {
+	const [showModal, setShowModal] = useState(false)
+
 	return <div>Modal</div>
 }
 
