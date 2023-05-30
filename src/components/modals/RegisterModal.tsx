@@ -5,7 +5,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import { FcGoogle } from 'react-icons/fc'
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
 import useRegisterModal from '@/hooks/useRegisterHooks'
-
+import Modal from './Modal'
 
 type Props = {}
 
@@ -25,7 +25,7 @@ const RegisterModal = (props: Props) => {
 		}
 	})
 
-    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+	const onSubmit: SubmitHandler<FieldValues> = (data) => {
 		setIsLoading(true)
 
 		axios
@@ -39,7 +39,16 @@ const RegisterModal = (props: Props) => {
 			.finally(() => setIsLoading(false))
 	}
 
-	return <div>RegisterModal</div>
+	return (
+		<Modal
+			disabled={isLoading}
+			isOpen={registerModal.isOpen}
+			title='Register'
+			actionLabel='Continue'
+			onClose={registerModal.onClose}
+			onSubmit={handleSubmit(onSubmit)}
+		/>
+	)
 }
 
 export default RegisterModal
