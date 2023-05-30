@@ -1,7 +1,11 @@
 'use client'
-type Props = {}
+type Props = {
+	title: string
+	subtitle?: string
+	center?: boolean
+}
 
-const Heading = (props: Props) => {
+const Heading = ({ title, subtitle, center }: Props) => {
 	return <div>Heading</div>
 }
 
