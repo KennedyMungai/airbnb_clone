@@ -2,6 +2,7 @@ import RegisterModal from '@/components/modals/RegisterModal'
 import NavBar from '@/components/navbar/NavBar'
 import { Nunito } from 'next/font/google'
 import './globals.css'
+import ToasterProvider from '@/providers/ToasterProvider'
 
 export const metadata = {
 	title: 'AirBnB Clone',
@@ -20,6 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={font.className}>
+				<ToasterProvider />
 				<RegisterModal />
 				<NavBar />
 				{children}
