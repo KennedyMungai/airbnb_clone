@@ -17,7 +17,9 @@ const Button = ({ label, onClick, disabled, outline, small, icon }: Props) => {
 			${outline ? 'bg-white' : 'bg-rose-500'}
 			${outline ? 'border-black' : 'border-rose-500'}
 			${outline ? 'text-black' : 'text-white'}
-			${small ? 'py-1' : 'py-3'}`}
+			${small ? 'py-1' : 'py-3'}
+			${small ? 'text-sm' : 'text-md'}
+			`}
 		>
 			{label}
 		</button>
