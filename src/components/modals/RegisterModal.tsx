@@ -92,7 +92,10 @@ const RegisterModal = (props: Props) => {
 			<div className='text-neutral-500 text-center mt-4 font-light'>
 				<div className='flex flex-row justify-center items-center gap-2'>
 					<div>Already Have An Account?</div>
-					<div className='text-neutral-800 cursor-pointer hover:underline'>
+					<div
+						className='text-neutral-800 cursor-pointer hover:underline'
+						onClick={registerModal.onClose}
+					>
 						Log In
 					</div>
 				</div>
