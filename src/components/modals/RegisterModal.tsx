@@ -37,7 +37,7 @@ const RegisterModal = (props: Props) => {
 				registerModal.onClose()
 			})
 			.catch((error) => {
-				toast.error(error)
+				toast.error(error.message)
 			})
 			.finally(() => setIsLoading(false))
 	}
