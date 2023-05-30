@@ -10,7 +10,7 @@ type Props = {}
 const UserMenu = (props: Props) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false)
 
-	const register = useRegisterModal()
+	const registerModal = useRegisterModal()
 
 	const toggleOpen = useCallback(() => {
 		setIsOpen((prev) => !prev)
@@ -42,7 +42,7 @@ const UserMenu = (props: Props) => {
 							<MenuItem label='Login' onClick={() => {}} />
 							<MenuItem
 								label='SignUp'
-								onClick={register.onOpen}
+								onClick={registerModal.onOpen}
 							/>
 						</>
 					</div>
