@@ -94,11 +94,15 @@ const Modal = ({
 							{/* Footer */}
 							<div className='flex flex-col gap-2 p-6'>
 								<div className='flex flex-row items-center gap-4 w-full'>
-									<Button
-										disabled={disabled}
-										onClick={handleSubmit}
-										label={secondaryActionLabel}
-									/>
+									{secondaryAction &&
+										secondaryActionLabel && (
+											<Button
+												disabled={disabled}
+												onClick={handleSecondaryAction}
+												label={secondaryActionLabel}
+												outline
+											/>
+										)}
 									<Button
 										disabled={disabled}
 										onClick={handleSubmit}
