@@ -13,9 +13,10 @@ type Props = {
 const Button = ({ label, onClick, disabled, outline, small, icon }: Props) => {
 	return (
 		<button
-			className={`relative disabled:opacity-70 disabled:cursor-not-allowed rounded-lg hover:opacity-80 transition w-full ${
-				outline ? 'bh-white' : 'bg-rose-500'
-			}`}
+			className={`relative disabled:opacity-70 disabled:cursor-not-allowed rounded-lg hover:opacity-80 transition w-full p-2
+			${outline ? 'bg-white' : 'bg-rose-500'}
+			${outline ? 'border-black' : 'border-rose-500'}
+			${outline ? 'text-black' : 'text-white'}`}
 		>
 			{label}
 		</button>
