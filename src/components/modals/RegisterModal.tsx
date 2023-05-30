@@ -11,7 +11,19 @@ type Props = {}
 
 const RegisterModal = (props: Props) => {
     const registerModal = useRegisterModal()
-	const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+
+	const {
+		register,
+		handleSubmit,
+		formState: { errors }
+	} = useForm<FieldValues>({
+		defaultValues: {
+			name: '',
+			email: '',
+			password: ''
+		}
+	})
 
 	return <div>RegisterModal</div>
 }
