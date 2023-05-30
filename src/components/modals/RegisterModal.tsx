@@ -10,6 +10,8 @@ import useRegisterModal from '@/hooks/useRegisterHooks'
 type Props = {}
 
 const RegisterModal = (props: Props) => {
+	const registerModal = useRegisterModal()
+
 	return <div>RegisterModal</div>
 }
 
