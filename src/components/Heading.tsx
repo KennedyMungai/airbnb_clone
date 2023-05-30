@@ -1,3 +1,4 @@
+'use client'
 type Props = {}
 
 const Heading = (props: Props) => {
