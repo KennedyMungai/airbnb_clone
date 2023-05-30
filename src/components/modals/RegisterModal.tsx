@@ -7,6 +7,7 @@ import { FieldValues, SubmitHandler, useForm } from 'react-hook-form'
 import useRegisterModal from '@/hooks/useRegisterHooks'
 import Modal from './Modal'
 import Heading from '../Heading'
+import Input from '../inputs/Input'
 
 type Props = {}
 
