@@ -2,6 +2,7 @@ import NavBar from '@/components/navbar/NavBar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
 import Modal from '@/components/modals/Modal'
+import RegisterModal from '@/components/modals/RegisterModal'
 
 export const metadata = {
 	title: 'AirBnB Clone',
@@ -20,6 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={font.className}>
+				<RegisterModal />
 				<NavBar />
 				{children}
 			</body>
