@@ -42,7 +42,7 @@ const RegisterModal = (props: Props) => {
 
     const bodyContent = (
 		<div className='flex flex-col gap-4'>
-			<Heading />
+			<Heading title='Welcome to AirBnB' subtitle='Create An Account' />
 		</div>
 	)
 
