@@ -1,9 +1,9 @@
 'use client'
+import useRegisterModal from '@/hooks/useRegisterHooks'
+import { useCallback, useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Avatar from '../Avatar'
-import { useCallback, useState } from 'react'
 import MenuItem from './MenuItem'
-import useRegisterModal from '@/hooks/useRegisterHooks'
 
 type Props = {}
 
