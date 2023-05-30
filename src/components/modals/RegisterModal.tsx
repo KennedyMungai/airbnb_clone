@@ -1,4 +1,6 @@
 'use client'
+
+
 type Props = {}
 
 const RegisterModal = (props: Props) => {
