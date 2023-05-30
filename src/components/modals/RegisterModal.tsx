@@ -10,7 +10,8 @@ import useRegisterModal from '@/hooks/useRegisterHooks'
 type Props = {}
 
 const RegisterModal = (props: Props) => {
-	const registerModal = useRegisterModal()
+    const registerModal = useRegisterModal()
+	const [isLoading, setIsLoading] = useState(false)
 
 	return <div>RegisterModal</div>
 }
