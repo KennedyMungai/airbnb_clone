@@ -89,6 +89,12 @@ const RegisterModal = (props: Props) => {
 				icon={AiFillGithub}
 				onClick={() => {}}
 			/>
+			<div className='text-neutral-500 text-center mt-4 font-light'>
+				<div className='flex flex-row justify-center gap-2'>
+					<div>Already Have An Account?</div>
+					<div>Log In</div>
+				</div>
+			</div>
 		</div>
 	)
 
