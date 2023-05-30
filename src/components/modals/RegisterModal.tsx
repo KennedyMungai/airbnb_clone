@@ -10,8 +10,8 @@ import useRegisterModal from '@/hooks/useRegisterHooks'
 type Props = {}
 
 const RegisterModal = (props: Props) => {
-    const registerModal = useRegisterModal()
-    const [isLoading, setIsLoading] = useState(false)
+	const registerModal = useRegisterModal()
+	const [isLoading, setIsLoading] = useState(false)
 
 	const {
 		register,
@@ -24,6 +24,8 @@ const RegisterModal = (props: Props) => {
 			password: ''
 		}
 	})
+
+	const onSubmit: SubmitHandler<FieldValues> = (data) => {}
 
 	return <div>RegisterModal</div>
 }
