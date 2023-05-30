@@ -10,8 +10,8 @@ type Props = {
 	icon?: IconType
 }
 
-const Button = (props: Props) => {
-	return <button>Sample Button Title</button>
+const Button = ({ label, onClick, disabled, outline, small, icon }: Props) => {
+	return <button>{label}</button>
 }
 
 export default Button
