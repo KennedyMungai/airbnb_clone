@@ -8,6 +8,8 @@
 		"cSpell.words": [
 			"datasource",
 			"zustand"
-		]
+		],
+		"WillLuke.nextjs.addTypesOnSave": true,
+		"WillLuke.nextjs.hasPrompted": true
 	}
 }
